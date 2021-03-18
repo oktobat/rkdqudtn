@@ -1,8 +1,8 @@
 [
-    { "location" : "background-image: url(../img/c1.jpg);" },
-    { "location" : "background-image: url(../img/c2.jpg);" },
-    { "location" : "background-image: url(../img/c3.jpg);" },
-    { "location" : "background-image: url(../img/c4.jpg);" },
-    { "location" : "background-image: url(../img/c5.jpg);" },
-    { "location" : "background-image: url(../img/c6.jpg);" }
+    { "location" : "background-image: url(./img/c1.jpg);" },
+    { "location" : "background-image: url(./img/c2.jpg);" },
+    { "location" : "background-image: url(./img/c3.jpg);" },
+    { "location" : "background-image: url(./img/c4.jpg);" },
+    { "location" : "background-image: url(./img/c5.jpg);" },
+    { "location" : "background-image: url(./img/c6.jpg);" }
 ]
