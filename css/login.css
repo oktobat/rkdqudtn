@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+.row {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+legend {
+    display: none;
+}
+button {
+    outline: none;
+}
+.loginBox {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.loginBox .left,
+.loginBox .right {
+    text-align: left;
+    position: relative;
+}
+.loginBox .right:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1px;    
+    height: 320px;
+    background: rgba(0,0,0,0.1);
+}
+.loginBox .left {
+    padding-right: 100px;
+}
+.loginBox .right {
+    padding-left: 100px;
+}
+.loginBox > div {
+    display: inline-block;
+}
+.loginBox h2 {
+    font-size: 30px;
+    padding: 20px 0;
+    position: relative;
+}
+.loginBox h2:before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 4px;
+    height: 23px;
+    background: red;
+    border-radius: 5px;
+}
+.loginBox p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+}
+.loginBox p:last-child {
+    padding-bottom: 20px;
+}
+.loginBox input {
+    display: inline-block;
+    width: 450px;
+    height: 45px;
+    border: 1px solid #999;
+}
+.loginBox input[placeholder] {
+    padding-left: 10px;
+    color: rgba(0,0,0,0.1)
+}
+.loginBox .depth1 p {
+    margin-bottom: 5px;
+}
+.loginBox .depth1 button {
+    width: 450px;
+    height: 45px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+.loginBox span {
+    color: #3481ef;
+    font-weight: bold;
+}
+.loginBox .depth2 a {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 45px;
+}
+.loginBox .depth2 a,
+.loginBox .depth2 button {
+    width: 450px;
+    height: 45px;
+    background: none;
+    border: 1px solid #222;
+    cursor: pointer;
+}
+.loginBox .depth2 .btn {
+    padding-bottom: 20px;
+}
+.loginBox .depth2 .btn a {
+    text-align: center;
+}

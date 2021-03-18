@@ -1,0 +1,52 @@
+@charset "utf-8";
+.map {
+    padding-top: 100px;
+}
+.roadInfo {
+    width: 700px;
+}
+.bus, .subway {
+    position: relative;
+}
+.bus {
+    padding: 40px 0 20px;
+}
+.subway {
+    padding: 20px 0 100px;
+}
+h2 {
+   padding: 0 0 15px 12px;
+   position: relative;
+}
+h2::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 3px;
+    height: 18px;
+    background: green;
+}
+.col1 {
+    width: 150px;
+}
+.col2 {
+    width: 450px;
+}
+th {
+    background: #f4f3f3;
+    border-right: 1px solid #ddd;
+}
+th,td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 10px 0 10px 15px;
+    font-size: 14px;
+}
+tr:nth-child(1){
+    border-top: 2px solid #ccc;
+}
+tr:last-child{
+    border-bottom: 2px solid #ccc;
+}

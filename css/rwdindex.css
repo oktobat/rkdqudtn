@@ -1,0 +1,336 @@
+@media screen and (max-width:1024px) {
+
+    /*헤더 .on*/
+    #header.on .outer {
+        margin-top: -31px;
+    }
+    #header.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    /*헤더 열기,닫기*/
+    #header .open.on {
+        display: block;
+    }
+    #header .close.on {
+        display: block;
+    }
+
+    /*헤더 네비게이션 depth1*/
+    #nav {
+        opacity: 0;
+        right: -100%;
+    }
+    /* #nav.on {
+        display:block;
+        animation: nav 1s both;
+    }
+    @keyframes nav {
+        from {
+          opacity: 0;
+          right: -100%
+        }
+      
+        to {
+          opacity: 1;
+          right: 40px
+        }
+      } */
+    #nav>ul>li>a {
+        padding: 40px 8px;
+    }
+    #nav .depth1>li:nth-child(5) {
+        margin-right: 40px;
+    }
+    #nav .depth1>li:nth-child(6) {
+        display: none;
+    }
+
+    /*섹션 아티클2*/
+    .article2 .depth3 {
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .article2 .depth3 > p {
+        display: none;
+    }
+    .article2 .depth3 > a {
+        margin-top: 10px;
+    }
+
+    /*섹션 아티클3*/
+    .article3 .depth3 {
+        padding: 0px 0px;
+    }
+    .article3 .depth3 > p {
+        width: 33.3333%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /*섹션 아티클5*/
+    .article5 > ul > li p {
+        word-break: break-all;
+        padding: 20px 10px 30px;
+    }
+    .article5 > ul > li span {
+        display: block;
+        padding-left: 8px;
+    }
+
+    /*푸터 탑버튼*/
+    #footer .topbt {
+        position: fixed;
+        bottom: 3%;
+        right: 3%;
+    }
+    #footer .topbt a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: #E0E1E1;
+        text-align: center;
+        line-height: 25px;
+        font-size: 16px;
+        transition: all 0.1s;
+    }
+
+    /* 로그인 */
+    
+    .loginBox .left {
+        padding-right: 0px;
+    }
+    .loginBox .right {
+        padding-left: 0px;
+    }
+    .loginBox .right:before {
+        display: none;
+    }
+    .loginBox {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+    .loginBox .left,
+    .loginBox .right {
+        text-align: ;
+        position: relative;
+    }
+    .loginBox > div {
+        display: block;
+    }
+
+    /*마지막 부분*/
+}
+
+@media screen and (max-width:768px) {
+    /*섹션 아티클1 슬라이드 그룹 설정*/
+    .slide_group .slick-arrow {
+        opacity: 0;
+    }
+
+    /*헤더 열기,닫기*/
+    #header .open.on {
+        display: block;
+    }
+    #header .close.on {
+        display: block;
+    }
+
+    /*헤더 네비게이션 depth1*/
+    #nav {
+        display:block;
+        position: fixed;
+        top: 127px;
+        bottom: 0;
+        transform: translateY(0%);
+        overflow-y: auto;
+        transition: all 0.3s;
+        width: 150px;
+        right: -150px;
+        opacity: 0;
+    }
+    #header.on #nav {
+        top: 96px;
+    }    
+    #nav .depth1>li:nth-child(5) {
+        margin-right: 0px;
+    }
+    #nav>ul>li {
+        float: none;
+        display: block;
+    }
+    #nav>ul>li>a {
+        padding: 30px 20px;
+    }
+    #nav.on {
+        display:block;
+        animation: none 1s both;
+    }
+    @keyframes nav {
+        from {
+          opacity: 0;
+          right: -100%
+        }
+      
+        to {
+          opacity: 1;
+          right: 15px
+        }
+      }
+
+    /*헤더 네비게이션 depth2*/
+    #nav .depth2 {
+        position: static;
+        width: auto;
+    }
+
+    /*푸터 인포*/
+    #footer .info span {
+        display: block;
+    }
+
+    /*마지막 부분*/
+}
+
+@media screen and (max-width:500px) {
+
+    /*섹션 아티클2*/
+    .article2 .textbox span {
+        display: block;
+        padding-top: 5px;
+    }
+    .article2 .depth3 {
+        float: none;
+        width: 100%;
+        padding-bottom: 30px;
+        opacity: 1;
+        
+    }
+    .article2 .depth3:nth-child(3) {
+        padding-bottom: 0px;        
+    }
+    .article2.on .depth3:nth-child(1) {
+        animation: ar2no 0.5s both 0.6s;
+    }
+    .article2.on .depth3:nth-child(2) {
+        animation: ar2no 0.5s both 0.8s;
+    }
+    .article2.on .depth3:nth-child(3) {
+        animation: ar2no 0.5s both 1.0s;
+    }
+
+    /*섹션 아티클3*/
+    .article3 .depth3 {
+        float: none;
+        width: 100%;
+        padding-bottom: 30px;
+        opacity: 1;
+    }
+    .article3.on .depth3 {
+        animation: ar3no 0.5s both 0.6s;
+    }
+    .article3 .depth3:nth-child(3) {
+        padding-bottom: 0px;        
+    }
+
+    /*섹션 아티클5*/
+    .article5 > ul > li {
+        float: none;
+        width: 100%;
+    }
+    .article5 > ul > li h3 {
+        font-size: 34px;
+        padding-top: 55px;
+    }
+    .article5 > ul > li p {
+        font-size: 18px;
+        word-break: break-all;
+        padding: 20px 0px 30px;
+    }
+    .article5 > ul > li i {
+        font-size: 30px;
+    }
+    .article5 .depth1 {
+        opacity: 1;
+    }    
+    .article5.on .depth1:nth-child(1) {
+        animation: ar5no 0.5s both 0.4s;
+    }
+    .article5.on .depth1:nth-child(2) {
+        animation: ar5no 0.5s both 0.6s;
+    }
+    .article5.on .depth1:nth-child(3) {
+        animation: ar5no 0.5s both 0.8s;
+    }
+    .article5.on .depth1:nth-child(4) {
+        animation: ar5no 0.5s both 1.0s;
+    }
+
+    /*마지막 부분*/
+}
+
+@media screen and (max-width:450px) {
+
+    /*헤더 아웃터*/
+    .outer ul li i {
+        display: none;
+    }
+    .outer ul li a {
+        padding: 7px 7px 7px 13px;
+    }
+}
+
+@media screen and (max-width:301px) {
+
+    /*헤더 아웃터*/
+    .outer ul li a {
+        padding: 7px 5px 7px 10px;
+    }
+
+    /*헤더 네비게이션 depth1*/    
+    #nav {
+        width: 140px;
+    }
+    #nav>ul>li>a {
+        padding: 20px 20px;
+    }
+    
+
+    /*섹션 아티클1 슬라이드*/
+    .article1 .slide_text p {
+        font-size: 16px;
+    }
+    .article1 .slide_text h2 {
+        font-size: 28px;
+    }
+    .article1 .slide_text a {
+        font-size: 14px;
+    }
+    .article1 .slide_text span {
+        display: block;
+    }
+    .article1 .slide1 {
+        height: 400px;
+    }
+    .article1 .slide2 {
+        height: 400px;
+    }
+    .article1 .slide3 {
+        height: 400px;
+    }
+
+    /*섹션 아티클5*/
+    .article5 > ul > li p {
+        font-size: 13px;
+    }
+    .article5 > ul > li p > span {
+        padding-right: 8px;
+    }
+
+    /*마지막 부분*/
+}
